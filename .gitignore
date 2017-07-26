@@ -28,6 +28,15 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
+*~
+*.DS_Store 
+*.xcuserstate
+*.xcworkspace
+xcuserdata 
+*.lock
+Pods
+BaiduTraceSDK.framework
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However

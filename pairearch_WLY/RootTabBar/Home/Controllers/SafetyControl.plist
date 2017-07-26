@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>data</key>
+    <array>
+        <dict>
+            <key>des_title</key>
+            <string>着装要求</string>
+            <key>des_list</key>
+            <array>
+                <string>1.进入工厂不准穿拖鞋、凉鞋和三分短裤</string>
+                <string>2.进入工厂要穿反光服并穿配整齐</string>
+            </array>
+        </dict>
+        <dict>
+            <key>des_title</key>
+            <string>行为要求</string>
+            <key>des_list</key>
+            <array>
+                <string>1.不准在厂区内吃槟榔和抽烟</string>
+                <string>2.不准在叉车工作区打闹、玩耍和睡觉</string>
+                <string>3.不准在厂区修车和保养</string>
+                <string>4.不准边开车、撕条码时打电话</string>
+                <string>5.不准在非指定区域逗留</string>
+                <string>6.不站在厂区吃东西和乱扔垃圾</string>
+                <string>7.不准随地大小便，洗刷要到卫生间</string>
+                <string>8.登高作业要使用安全带</string>
+                <string>9.要遵守工厂相关要求和制度</string>
+            </array>
+        </dict>
+        <dict>
+            <key>des_title</key>
+            <string>车辆要求</string>
+            <key>des_list</key>
+            <array>
+                <string>1.车辆停放在指定的位置</string>
+                <string>2.司机下车要熄火并规范使用三角木</string>
+                <string>3.车辆无漏油、冒浓烟</string>
+                <string>4.车辆无异味、无漏水、平整干净</string>
+                <string>5.散装车辆完货后尾部要使用网兜</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>

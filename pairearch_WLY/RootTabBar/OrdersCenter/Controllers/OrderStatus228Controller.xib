@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderStatus228Controller">
+            <connections>
+                <outlet property="codeLabel" destination="xwf-Hm-adR" id="NQf-Zb-pLb"/>
+                <outlet property="startScanButton" destination="xR9-2M-wav" id="x6g-fc-VYL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装货中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmA-Sp-BDf">
+                    <rect key="frame" x="0.0" y="20" width="375" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好，请您到装车位，感谢您的耐心等候！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWm-Ya-HHU">
+                    <rect key="frame" x="20" y="60" width="335" height="17"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始装货请扫码！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pF-Xl-BQ1">
+                    <rect key="frame" x="20" y="82" width="335" height="17"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运单号：" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-Hm-adR">
+                    <rect key="frame" x="20" y="104" width="335" height="17"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR9-2M-wav">
+                    <rect key="frame" x="100" y="151" width="175" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.65328338409999998" blue="0.43350003459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Odc-wG-4sY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="装货完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="scanButtonAction:" destination="-1" eventType="touchUpInside" id="QdF-TV-eGu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SmA-Sp-BDf" secondAttribute="trailing" id="1xC-ei-828"/>
+                <constraint firstItem="SmA-Sp-BDf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="3Dc-AS-J9d"/>
+                <constraint firstAttribute="trailing" secondItem="CWm-Ya-HHU" secondAttribute="trailing" constant="20" id="AZd-J3-jvz"/>
+                <constraint firstItem="xR9-2M-wav" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="HIe-q6-gd4"/>
+                <constraint firstItem="7pF-Xl-BQ1" firstAttribute="trailing" secondItem="CWm-Ya-HHU" secondAttribute="trailing" id="Jju-64-Jos"/>
+                <constraint firstItem="xwf-Hm-adR" firstAttribute="leading" secondItem="7pF-Xl-BQ1" secondAttribute="leading" id="TxL-hy-Jgm"/>
+                <constraint firstItem="7pF-Xl-BQ1" firstAttribute="leading" secondItem="CWm-Ya-HHU" secondAttribute="leading" id="UQc-EY-GQ2"/>
+                <constraint firstItem="CWm-Ya-HHU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Y4Y-TZ-oXN"/>
+                <constraint firstItem="CWm-Ya-HHU" firstAttribute="top" secondItem="SmA-Sp-BDf" secondAttribute="bottom" constant="20" id="cJ8-4x-3i0"/>
+                <constraint firstItem="7pF-Xl-BQ1" firstAttribute="top" secondItem="CWm-Ya-HHU" secondAttribute="bottom" constant="5" id="jAh-ec-nQG"/>
+                <constraint firstItem="xwf-Hm-adR" firstAttribute="trailing" secondItem="7pF-Xl-BQ1" secondAttribute="trailing" id="jZe-qT-VI9"/>
+                <constraint firstItem="xwf-Hm-adR" firstAttribute="top" secondItem="7pF-Xl-BQ1" secondAttribute="bottom" constant="5" id="oDw-gc-CNL"/>
+                <constraint firstItem="xR9-2M-wav" firstAttribute="centerX" secondItem="CWm-Ya-HHU" secondAttribute="centerX" id="ojF-sI-eDT"/>
+                <constraint firstItem="CWm-Ya-HHU" firstAttribute="top" secondItem="SmA-Sp-BDf" secondAttribute="bottom" constant="20" id="q7S-NS-OIz"/>
+                <constraint firstItem="xR9-2M-wav" firstAttribute="top" secondItem="xwf-Hm-adR" secondAttribute="bottom" constant="30" id="qu5-GY-PU1"/>
+                <constraint firstItem="SmA-Sp-BDf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sWZ-jt-prx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

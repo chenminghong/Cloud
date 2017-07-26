@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Mistake212Header">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wg-UO-5FF">
+                    <rect key="frame" x="10" y="5" width="70" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="WZ0-Mo-MQT"/>
+                        <constraint firstAttribute="width" constant="70" id="gGk-mn-tXh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="承运商未预约时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70u-Sx-tLr">
+                    <rect key="frame" x="85" y="5" width="280" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="ial-NV-bIT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mX-eO-8eq">
+                    <rect key="frame" x="0.0" y="99" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.93705266710000001" green="0.39020347599999999" blue="0.1872715056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Du4-dp-d0R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Wg-UO-5FF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="7H5-qo-KT6"/>
+                <constraint firstItem="7Wg-UO-5FF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EAc-Rv-cPa"/>
+                <constraint firstItem="70u-Sx-tLr" firstAttribute="centerY" secondItem="7Wg-UO-5FF" secondAttribute="centerY" id="ERZ-Er-8iW"/>
+                <constraint firstAttribute="trailing" secondItem="70u-Sx-tLr" secondAttribute="trailing" constant="10" id="Git-mA-4UW"/>
+                <constraint firstAttribute="bottom" secondItem="8mX-eO-8eq" secondAttribute="bottom" id="Ndb-h4-C99"/>
+                <constraint firstItem="8mX-eO-8eq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ouv-6s-3vY"/>
+                <constraint firstItem="70u-Sx-tLr" firstAttribute="leading" secondItem="7Wg-UO-5FF" secondAttribute="trailing" constant="5" id="Yxy-Zb-Txl"/>
+                <constraint firstAttribute="trailing" secondItem="8mX-eO-8eq" secondAttribute="trailing" id="jeo-CL-Nns"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomLineView" destination="8mX-eO-8eq" id="ryz-IP-bRc"/>
+                <outlet property="planTimeLabel" destination="70u-Sx-tLr" id="saK-wg-XR2"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-232"/>
+        </view>
+    </objects>
+</document>

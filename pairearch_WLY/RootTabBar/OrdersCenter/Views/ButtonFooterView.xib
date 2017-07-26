@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ButtonFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdR-39-agD">
+                    <rect key="frame" x="100" y="10" width="174" height="40"/>
+                    <color key="backgroundColor" red="0.93705266710000001" green="0.39020347599999999" blue="0.1872715056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="按钮">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KdR-39-agD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1wT-v1-ZX0"/>
+                <constraint firstItem="KdR-39-agD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="bMZ-oQ-gC8"/>
+                <constraint firstItem="KdR-39-agD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="iId-9E-KMM"/>
+                <constraint firstItem="KdR-39-agD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kSK-cV-lOp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="footerButton" destination="KdR-39-agD" id="qcY-e7-VLB"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="203"/>
+        </view>
+    </objects>
+</document>

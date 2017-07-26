@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaitListController">
+            <connections>
+                <outlet property="tipsLabel" destination="6QI-Ra-zTT" id="O4E-8U-X3y"/>
+                <outlet property="tipsTitleLabel" destination="Efg-k9-Nw3" id="BYM-Ea-ccJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="装货候补排队" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efg-k9-Nw3">
+                    <rect key="frame" x="0.0" y="30" width="375" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已签到成功，请在场外等候入厂通知！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QI-Ra-zTT">
+                    <rect key="frame" x="20" y="70" width="335" height="17"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6QI-Ra-zTT" firstAttribute="top" secondItem="Efg-k9-Nw3" secondAttribute="bottom" constant="20" id="Y0u-J6-0hp"/>
+                <constraint firstItem="Efg-k9-Nw3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cZs-kN-roA"/>
+                <constraint firstItem="6QI-Ra-zTT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="g7G-9i-UNV"/>
+                <constraint firstAttribute="trailing" secondItem="6QI-Ra-zTT" secondAttribute="trailing" constant="20" id="jnm-VO-PEf"/>
+                <constraint firstAttribute="trailing" secondItem="Efg-k9-Nw3" secondAttribute="trailing" id="sv3-1A-TLS"/>
+                <constraint firstItem="Efg-k9-Nw3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="zEH-49-k13"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

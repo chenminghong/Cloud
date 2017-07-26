@@ -14,11 +14,11 @@
 /*============================BaseUrl相关=============================*/
 //API前缀定义
 #define PAIREACH_BIDDING_URL             @"http://106.14.39.65:8385/itip/clientBid/"  //竞价中心
-//#define PAIREACH_BIDDING_URL             @"http://192.168.0.168:8085/itip/clientBid/"  //竞价中心Ada本地
+//#define PAIREACH_BIDDING_URL             @"http://192.168.0.188:8085/itip/clientBid/"  //竞价中心Ada本地
 
 
 #define PAIREACH_BASE_URL                @"http://106.14.39.65:8385/itip/client/"       //测试线上
-//#define PAIREACH_BASE_URL                @"http://192.168.0.168:8085/itip/client/"      //Ada本地IP
+//#define PAIREACH_BASE_URL                @"http://192.168.0.188:8085/itip/client/"      //Ada本地IP
 //#define PAIREACH_BASE_URL                @"http://192.168.1.14:8086/itip/client/"     //备用
 //#define PAIREACH_BASE_URL                @"http://itiptest.paireach.com/client/"       //双至域名
 

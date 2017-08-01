@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D9k-iN-38n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="D9k-iN-38n">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -200,6 +200,7 @@
                         <outlet property="bottomView" destination="Fse-cp-EKO" id="T1s-py-ahM"/>
                         <outlet property="stateLabel" destination="XLl-Sv-KJs" id="41T-Rh-0LL"/>
                         <outlet property="stateView" destination="TRD-Hw-49F" id="gcV-QA-MNC"/>
+                        <outlet property="telButton" destination="EP3-SL-iVy" id="Tjl-5I-Myf"/>
                         <outlet property="topLineView" destination="Q1D-4K-iH0" id="ZnL-O2-DZZ"/>
                         <outlet property="userIconBtn" destination="ui6-j2-HWt" id="DJm-Dg-vHH"/>
                         <outlet property="userNameLabel" destination="woS-iq-JZh" id="7im-zE-q4D"/>

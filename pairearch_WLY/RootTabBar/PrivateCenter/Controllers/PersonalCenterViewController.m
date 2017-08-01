@@ -37,8 +37,11 @@
         
     self.title = @"个人中心";
     
-    self.titltArr = @[@"修改密码", @"版本信息", @"关于我们"];
-    self.imageNameArr = @[@"shezhimima", @"banbenxinxi", @"guayuwomen"];
+//    self.titltArr = @[@"修改密码", @"版本信息", @"关于我们"];
+//    self.imageNameArr = @[@"shezhimima", @"banbenxinxi", @"guayuwomen"];
+    self.titltArr = @[@"修改密码", @"版本信息"];
+    self.imageNameArr = @[@"shezhimima", @"banbenxinxi"];
+    
     
     self.tableView = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
@@ -99,11 +102,12 @@
             VersionInfoViewController *versionInfoVC = [[VersionInfoViewController alloc] init];
             versionInfoVC.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:versionInfoVC animated:YES];
-        } else {
-            AboutUsViewController *aboutUsVC = [[AboutUsViewController alloc] init];
-            aboutUsVC.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:aboutUsVC animated:YES];
         }
+//        else {
+//            AboutUsViewController *aboutUsVC = [[AboutUsViewController alloc] init];
+//            aboutUsVC.hidesBottomBarWhenPushed = YES;
+//            [self.navigationController pushViewController:aboutUsVC animated:YES];
+//        }
     } else {
         [LoginViewController showSelfInController:self completeBlock:nil];
     }

@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *userNumberLabel;
 @property (weak, nonatomic) IBOutlet UIView *bannerView; //顶部banner
+@property (weak, nonatomic) IBOutlet UIButton *telButton;  //拨打电话按钮
 @property (nonatomic, strong) PaomaLabel *noticeContentL;  //通知公告栏
 @property (nonatomic, strong) WQLPaoMaView *paoma;  //公告栏；
 
@@ -60,6 +61,7 @@
     [self.view addSubview:self.paoma];
     [self.view addSubview:self.tableView];
     [self.view addSubview:self.stateButton];
+    self.telButton.hidden = YES;
     [MJRefreshUtil pullDownRefresh:self andScrollView:self.tableView andAction:@selector(getHomePageData)];
     
     self.stateLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:20];
@@ -93,7 +95,7 @@
     
     self.userNameLabel.text = [LoginModel shareLoginModel].name;
     self.userNumberLabel.text = [LoginModel shareLoginModel].tel;
-    
+
     [self.paoma startAnimation];
     
     
@@ -122,7 +124,7 @@
 
 - (WQLPaoMaView *)paoma {
     if (!_paoma) {
-        self.paoma = [[WQLPaoMaView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.bannerView.frame), self.view.frame.size.width, 40) withTitle:@"Copyright©2017 上海双至供应链管理有限公司"];
+        self.paoma = [[WQLPaoMaView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.bannerView.frame), self.view.frame.size.width, 40) withTitle:@"Copyright©2017 云仓配供应链管控平台"];
         [self.view addSubview:self.paoma];
         [self.paoma mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.bannerView.mas_bottom);

@@ -122,7 +122,7 @@
             make.height.mas_equalTo(47);
         }];
         self.bottomLabel.textAlignment = NSTextAlignmentCenter;
-        self.bottomLabel.text = @"Copyright©2017 上海双至供应链管理有限公司";
+        self.bottomLabel.text = @"Copyright©2017 云仓配供应链管理平台";
     }
     return _bottomLabel;
 }

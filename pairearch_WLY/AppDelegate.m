@@ -160,7 +160,6 @@
             [MJRefreshUtil begainRefresh:orderVC.tableView];
         }
     }
-    
 }
 
 //注册本地通知

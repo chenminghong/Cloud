@@ -98,7 +98,7 @@
 /**
  隐藏视图
  */
-- (void)hideWithCompletionBlock:(void(^)())completionBlock {
+- (void)hideWithCompletionBlock:(void(^)(void))completionBlock {
     [self.datePicker hide];
     [self.timePickerView hide];
     __weak typeof(self) weakSelf = self;

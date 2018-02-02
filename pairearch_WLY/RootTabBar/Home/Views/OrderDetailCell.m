@@ -48,10 +48,17 @@
 
 - (void)setDetailModel:(OrderDetailModel *)detailModel {
     _detailModel = detailModel;
-    self.commodityCodeLabel.text = detailModel.productCode;
-    self.commodityNameLabel.text = detailModel.productName;
-    self.commodityCountLabel.text = detailModel.planCount;
+    if (detailModel.productCode) {
+        self.commodityCodeLabel.text = detailModel.productCode;
+    }
     
+    if (detailModel.productCode) {
+        self.commodityNameLabel.text = detailModel.productName;
+    }
+    
+    if (detailModel.productCode) {
+        self.commodityCountLabel.text = detailModel.planCount;
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

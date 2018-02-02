@@ -17,6 +17,7 @@
 #define PAIREACH_BIDDING_URL             @"http://106.14.126.230/itip/clientBid/"  //线上地址
 //#define PAIREACH_BIDDING_URL             @"http://139.196.127.215:8285/itip/clientBid/"  //竞价中心测试地址
 //#define PAIREACH_BIDDING_URL             @"http://192.168.0.188:8085/itip/clientBid/"  //竞价中心Ada本地
+//#define PAIREACH_BIDDING_URL             @"http://itiptest.paireach.com/clientBid/"
 
 
 #define PAIREACH_BASE_URL                @"http://106.14.126.230/itip/client/"     //线上地址

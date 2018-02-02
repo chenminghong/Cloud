@@ -160,7 +160,6 @@
 		B3D3B2A91E66EA550033EF84 /* HomeTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D3B29E1E66EA550033EF84 /* HomeTableCell.xib */; };
 		B3D3B2AA1E66EA550033EF84 /* SaftyCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D3B2A01E66EA550033EF84 /* SaftyCheckCell.m */; };
 		B3D3B2AB1E66EA550033EF84 /* SaftyCheckCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D3B2A11E66EA550033EF84 /* SaftyCheckCell.xib */; };
-		B3FE7FD51E973F9800652BB8 /* libUMOnlineConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FE7FD31E973F9800652BB8 /* libUMOnlineConfig.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -437,8 +436,6 @@
 		B3D3B2A01E66EA550033EF84 /* SaftyCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaftyCheckCell.m; sourceTree = "<group>"; };
 		B3D3B2A11E66EA550033EF84 /* SaftyCheckCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SaftyCheckCell.xib; sourceTree = "<group>"; };
 		B3F313FE1E52B672002DD95D /* Pairearch_WLY.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pairearch_WLY.pch; sourceTree = "<group>"; };
-		B3FE7FD31E973F9800652BB8 /* libUMOnlineConfig.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMOnlineConfig.a; sourceTree = "<group>"; };
-		B3FE7FD41E973F9800652BB8 /* UMOnlineConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMOnlineConfig.h; sourceTree = "<group>"; };
 		DA209D93E108EC9758676C90 /* Pods-pairearch_WLY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pairearch_WLY.release.xcconfig"; path = "Pods/Target Support Files/Pods-pairearch_WLY/Pods-pairearch_WLY.release.xcconfig"; sourceTree = "<group>"; };
 		E253EE02D936D5B70824B760 /* libPods-pairearch_WLY.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pairearch_WLY.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -450,7 +447,6 @@
 			files = (
 				76DA3C9EDAD9C136CDB7CBDB /* libPods-pairearch_WLY.a in Frameworks */,
 				B35D79361E666AB800ED730B /* MapKit.framework in Frameworks */,
-				B3FE7FD51E973F9800652BB8 /* libUMOnlineConfig.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,7 +935,6 @@
 				0FE58E3A1EC984130041E1D9 /* ProgressHUD */,
 				0FE58E0C1EC980C30041E1D9 /* SGQRCode */,
 				0FE5C0021EB1C9D000F82D97 /* CreatQRCodeAndBarCodeFromLeon */,
-				B3FE7FD21E973F9800652BB8 /* UMOnlineConfig */,
 				B3CC54C31E6037D60072EA47 /* WQLPaoMaView */,
 				B3CC54BC1E6020090072EA47 /* AutoHeight */,
 				B3CC54B21E601C920072EA47 /* PaomaLabel */,
@@ -1141,15 +1136,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B3FE7FD21E973F9800652BB8 /* UMOnlineConfig */ = {
-			isa = PBXGroup;
-			children = (
-				B3FE7FD31E973F9800652BB8 /* libUMOnlineConfig.a */,
-				B3FE7FD41E973F9800652BB8 /* UMOnlineConfig.h */,
-			);
-			path = UMOnlineConfig;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1180,7 +1166,7 @@
 		B32228CE1E52A2C200ED50ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Leo;
 				TargetAttributes = {
 					B32228D51E52A2C300ED50ED = {
@@ -1472,7 +1458,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1480,7 +1468,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1508,7 +1500,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "02941376-16d5-44bd-978b-b0b52c215dc1";
+				PROVISIONING_PROFILE = "682c5f62-ae02-491c-bd9d-413e10fab678";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1524,7 +1516,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1532,7 +1526,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1553,7 +1551,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "02941376-16d5-44bd-978b-b0b52c215dc1";
+				PROVISIONING_PROFILE = "682c5f62-ae02-491c-bd9d-413e10fab678";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

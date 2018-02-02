@@ -36,7 +36,7 @@
 }
 
 - (NSString *)wareDispatchTime {
-    return [NSString stringWithFormat:@"计划装运日期:%@", [_wareDispatchTime substringToIndex:10]];
+    return _wareDispatchTime.length > 0? [NSString stringWithFormat:@"计划装运日期:%@", [_wareDispatchTime substringToIndex:10]]:@"计划装运日期:";
 }
 
 

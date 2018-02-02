@@ -36,27 +36,26 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if (self.planAchieveTime.length <= 0) {
-        [self showTimeSelectView];
-    }
+//    if (self.planAchieveTime.length <= 0) {
+//        [self showTimeSelectView];
+//    }
 }
 
 - (void)setPlanAchieveTime:(NSString *)planAchieveTime {
     _planAchieveTime = planAchieveTime;
     
-    if (self.planAchieveTime.length <= 0) {
-        self.planTimeButton.userInteractionEnabled = NO;
-        self.planTimeButton.backgroundColor = ABNORMAL_THEME_COLOR;
-        self.signButton.userInteractionEnabled = NO;
-        self.signButton.backgroundColor = ABNORMAL_THEME_COLOR;
-    } else {
-        self.planTimeButton.userInteractionEnabled = YES;
-        self.planTimeButton.backgroundColor = MAIN_THEME_COLOR;
-        self.signButton.userInteractionEnabled = YES;
-        self.signButton.backgroundColor = MAIN_THEME_COLOR;
-    }
+//    if (self.planAchieveTime.length <= 0) {
+//        self.planTimeButton.userInteractionEnabled = NO;
+//        self.planTimeButton.backgroundColor = ABNORMAL_THEME_COLOR;
+//        self.signButton.userInteractionEnabled = NO;
+//        self.signButton.backgroundColor = ABNORMAL_THEME_COLOR;
+//    } else {
+//        self.planTimeButton.userInteractionEnabled = YES;
+//        self.planTimeButton.backgroundColor = MAIN_THEME_COLOR;
+//        self.signButton.userInteractionEnabled = YES;
+//        self.signButton.backgroundColor = MAIN_THEME_COLOR;
+//    }
 }
-
 
 - (IBAction)planTimeAction:(UIButton *)sender {
     [self showTimeSelectView];
@@ -73,7 +72,7 @@
         [paraDict setObject:weakSelf.code.length>0? weakSelf.code:@"" forKey:@"orderCode"];
         [weakSelf networkWithUrlStr:CHANGE_PLAN_ARRIVETIME_API paraDict:paraDict];
     }];
-    self.timeView.tapHide = self.planAchieveTime.length > 0;
+    self.timeView.tapHide = YES;
     return self.timeView;
 }
 

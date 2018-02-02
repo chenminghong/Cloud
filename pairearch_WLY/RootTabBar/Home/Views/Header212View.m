@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.bottomLineView.backgroundColor = MAIN_THEME_COLOR;
-    self.selectedButton.selected = NO;
+    self.selectedButton.selected = YES;
     [self.selectedButton setImage:[UIImage imageNamed:@"kongkuang"] forState:UIControlStateNormal];
     [self.selectedButton setImage:[UIImage imageNamed:@"xuanzekuang"] forState:UIControlStateSelected];
 }

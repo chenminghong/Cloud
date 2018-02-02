@@ -84,9 +84,9 @@
     return HEIGHT_FOR_HEADER;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return HEIGHT_FOR_FOOTER;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+//    return HEIGHT_FOR_FOOTER;
+//}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     NSString *tempStr = self.homePageModel.planDate;
@@ -98,11 +98,11 @@
     return self.headerView;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    self.footerView.codeImageView.image = [CreatQRCodeAndBarCodeFromLeon generateBarCode:self.homePageModel.code size:CGSizeMake(kScreenWidth, kScreenWidth * 9.0 / 16.0) color:[UIColor blackColor] backGroundColor:nil];
-    self.footerView.codeNumberLabel.text = self.homePageModel.code;
-    return self.footerView;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+//    self.footerView.codeImageView.image = [CreatQRCodeAndBarCodeFromLeon generateBarCode:self.homePageModel.code size:CGSizeMake(kScreenWidth, kScreenWidth * 9.0 / 16.0) color:[UIColor blackColor] backGroundColor:nil];
+//    self.footerView.codeNumberLabel.text = self.homePageModel.code;
+//    return self.footerView;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     HomePageModel *model = self.homePageModel;

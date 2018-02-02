@@ -189,7 +189,7 @@
 }
 
 //模态出登录界面
-+ (void)showSelfInController:(UIViewController *)controller completeBlock:(void (^)())completeBlock {
++ (void)showSelfInController:(UIViewController *)controller completeBlock:(void (^)(void))completeBlock {
     LoginViewController *loginVC = [LoginViewController new];
     NavigationController *navigationVC = [[NavigationController alloc] initWithRootViewController:loginVC];
     //显示第一个tabBar

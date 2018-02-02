@@ -47,7 +47,7 @@
                         <constraint firstAttribute="height" constant="40" id="gr4-fa-Cmf"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="修改预计到达收货工厂日期和时间">
+                    <state key="normal" title="修改预计到达收货地点日期和时间">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>

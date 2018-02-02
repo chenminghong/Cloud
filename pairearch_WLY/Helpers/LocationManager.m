@@ -137,16 +137,15 @@
     __weak typeof(self) weakSelf = self;
     [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
         if (!error) {
-            CLPlacemark *placemark=[placemarks firstObject];
-            NSDictionary *locationDict = placemark.addressDictionary;
-    
+            CLPlacemark *placemark = [placemarks firstObject];
             NSString *speed = [NSString stringWithFormat:@"%f", location.speed];
             NSString *direction = [NSString stringWithFormat:@"%f", location.course];
+            NSDictionary *locationDict = placemark.addressDictionary;
             NSArray *addressArr = [NSArray arrayWithArray:locationDict[@"FormattedAddressLines"]];
             NSString *address = addressArr.count? addressArr[0]:@"";
-            NSString *province = locationDict[@"State"];
-            NSString *city = locationDict[@"City"];
-            NSString *area = locationDict[@"SubLocality"];
+            NSString *city = placemark.locality;
+            NSString *province = placemark.administrativeArea;
+            NSString *area = placemark.subLocality;
             NSString *remark = @"iOS";
             NSString *active = @"Y";
             
@@ -160,13 +159,13 @@
                                  @"speed":speed,
                                  @"direction":direction,
                                  @"address":address,
-                                 @"province":province,
+                                 @"province":province? province:city,
                                  @"city":city,
                                  @"area":area,
                                  @"remark":remark,
                                  @"active":active,
                                  @"locationTime":locationTime};
-//            NSLog(@"详细信息:%@", self.addressInfo);
+            NSLog(@"详细信息:%@", self.addressInfo);
         }
     }];
 }

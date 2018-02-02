@@ -20,10 +20,8 @@
 #import <MBProgressHUD.h>
 #import <MBProgressHUD+BWMExtension.h>
 #import <Masonry.h>
-#import <BaiduMobStat.h>
 #import <SAMKeychain.h>
 #import <IQKeyboardManager.h>
-#import <XFDialogBuilder.h>
 #import "TZImagePickerController.h"
 #import <UMMobClick/MobClick.h>
 #import <DYLocationConverter.h>
@@ -58,13 +56,13 @@
 //关键字
 #define BAIDU_AK @"NudffmrH77cIxCdxQQtSd1PeNw75zbBR"  //百度地图AK
 #define UMENF_STATISTICS_APPKEY   @"5977203004e205573f000341"  //友盟统计的APPKRY
-#define SERVER_ID    133374           //百度鹰眼服务的serverId
-#define APP_KEY      @"8393f45774"     //百度统计AppKey
+//#define SERVER_ID    133374           //百度鹰眼服务的serverId
+//#define APP_KEY      @"8393f45774"     //百度统计AppKey
 #define LOGIN_STATE  @"login_state"   //登录状态关键字
 #define USER_NUMBER  @"user_number"   //存储电话
 #define USER_ACCOUNT @"user_account"  //用户密码
 #define USER_INFO    @"user_info"     //用户信息
-#define APP_ID       @"1247768818"    //Apple ID
+#define APP_ID       @"1314874185"    //Apple ID
 #define JPUSH_APPKEY @"7606a3651574b3339094e71a"  //极光推送SDK的APPKEY
 
 //适配

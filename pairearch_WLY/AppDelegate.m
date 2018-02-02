@@ -11,7 +11,6 @@
 #import "LoginViewController.h"
 #import "RootTabController.h"
 #import "OrdersViewController.h"
-#import <XHVersion.h>
 
 @interface AppDelegate ()<UNUserNotificationCenterDelegate, JPUSHRegisterDelegate>
 
@@ -37,7 +36,7 @@
     [self netWorkDidChangeAction];
     
     //版本更新
-//    [self checkAppVersion];
+    [self checkAppVersion];
     
     //初始化JPush
     [self registerJpushWithOptions:launchOptions];
@@ -54,10 +53,14 @@
     return YES;
 }
 
+static NSString * extracted() {
+    return APP_ID;
+}
+
 //检查App版本信息
 - (void)checkAppVersion {
     //构建版本获取appID
-    NSString *updateUrl = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@", APP_ID];
+    NSString *updateUrl = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@", extracted()];
     [[NetworkHelper shareClient] GET:updateUrl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *receiveDic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
         if ([[receiveDic valueForKey:@"resultCount"] integerValue] > 0) {
@@ -300,6 +303,7 @@
     }
 }
 
+/*
 //百度统计
 - (void)startBaiduMob {
     
@@ -313,6 +317,7 @@
     //开始上传
     [statTracker startWithAppId:APP_KEY];
 }
+ */
 
 /**
  初始化友盟统计SDK

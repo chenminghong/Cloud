@@ -61,6 +61,7 @@
 
     self.loadNumberLabel.text = [NSString stringWithFormat:@"单号:%@", homeModel.code];
     self.planLoadTimeLabel.text = homeModel.wareDispatchTime;
+    NSLog(@"%@", homeModel.wareDispatchTime);
     self.startNameLabel.text = homeModel.sourceName;
     self.startAddressLabel.text = homeModel.sourceAddr;
     self.endNameLabel.text = homeModel.dcName;
